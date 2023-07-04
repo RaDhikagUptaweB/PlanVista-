@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset
+    ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="to-do-style.css">
+    
+     <title>TODOs List</title>
+</head>
+
+<body>
+  <nav>
+    <ul id='MenuItems'>
+        <li><a href='mainpage.html'>HOME</a></li>
+        <li><a href='To_Do.html'>LIST</a></li>
+        <li><a href='note.html'>NOTES</a></li>
+        
+
+    </ul>
+</nav>
+    <div class="text">
+        <p >Welcome To Your <br>  TO-DO List</p>
+    </div>
+    <div class="main-container">
+        
+        <div class="todo-block">
+        <div class="upper">
+            <p  class="form-text">Add an item to the list</p>
+            <br>    
+          </div>
+          
+          <label class="title">Title</label>
+          <input type="text" class="text-input" id="title" >
+          <div class="Description-area">
+              <label class="description">Description</label>
+              <textarea  class="input_area" id="description" ></textarea>
+          </div>
+          
+          
+          <div class="to-do-button">
+          <button   class="add" id="add" >Add to list</button>
+          <button  class="clear" id="clear" onclick="clearStorage()"; >Clear list</button>
+         </div> 
+        </div>
+       
+        <div id="items" class="my-List">
+            <h2 class="List-Name">Your Items</h2>
+            <table id="TableId" class="table">
+                <thead>
+                  <tr>
+                    <th   scope="col">SNo</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th> 
+                    <th scope="col">Actions</th> 
+                  </tr>
+                </thead >
+                <tbody id="tableBody">
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

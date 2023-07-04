@@ -1,0 +1,182 @@
+.main-container{
+   
+     
+    color: black;
+    
+}
+.Heading{
+    font-family: 'Dancing Script';
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 70px; 
+    color: black; 
+}
+.text{
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    padding-left: 50px;
+    color: black;
+}
+.input_area{
+    height: 200px;
+    width: 500px;
+}
+.Notes-Area{
+    padding-left: 50px;
+}
+
+.note-block{
+    height: 350px;
+    width: 600px;
+    background-color: rgba(128, 128, 128, 0.166);
+    border:1px solid black ;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    
+
+}
+.Notes-Heading{
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    text-align: center;
+}
+.note-list{
+   
+    margin-left: 20px;
+    background-color: rgba(128, 128, 128, 0.166);
+    border:1px solid black ;
+    margin-bottom: 100px;
+    
+}
+.inputed{
+    text-size-adjust: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+.inputed p{
+    font-size: 20px
+}
+.row {
+    padding-left: 70px;
+    height: 50px;
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+
+    justify-content: space-around;
+    
+}
+h4{
+    text-align: center;
+}
+nav
+
+{
+    
+    flex: 1;
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-bottom: 5px;
+    
+}
+
+nav ul 
+
+{
+
+    display: inline-block;
+    
+    list-style: none;
+    
+
+}
+
+nav ul li
+
+{
+
+    display: inline-block;
+
+    margin-right: 90px;
+
+    margin-top: 17px;
+    
+
+}
+
+nav ul li a
+
+{
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    color: black;
+
+    
+
+}
+
+nav ul li a:hover
+
+{
+
+    color: red;
+
+}
+
+
+body{
+
+    background-image: linear-gradient(
+        to bottom,
+        lightblue,
+        white 42%,
+        lightblue
+    )
+}   
+@media (max-width: 768px){
+    .Heading{
+        font-size: 50px;
+        padding: 70px 0 15px 0px ;
+    }
+    
+    .note-block{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      
+    }
+    .input_area{
+        width: 90%;
+        
+    }
+    .Notes-Heading{
+        font-size:20px ;
+        text-align: left;
+    }
+    .row{
+        display: block;
+        margin-left: 0%;
+        padding-left: 0%;
+        
+    }
+    .note-list{
+        width: 95%;
+       margin-right: 500px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  
+    .note-block{
+        width: 100%;
+    }
+}
+
+    
+
+

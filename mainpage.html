@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="mainpagestyle.css">
+    <script src></script>
+    
+    <title>MyPlanner</title>
+</head>
+<body >
+    <header>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='mainpage.html'>HOME</a></li>
+                <li><a href='To_Do.html'>LIST</a></li>
+                <li><a href='note.html'>NOTES</a></li>
+                <li><a href="registeration/form.html">Log Out</a></li>
+                
+    
+            </ul>
+        </nav>
+    </header>
+    <img class="LOGO" src="Pictures/download.png" class="logo">
+    <div class="main-container">
+        
+            
+       
+        <div class="middlecontent">
+            <h5>The secret weapon of successful people</h5>
+            <p class="par">
+            Successful people constantly evaluate what
+            they're spending their time on., Daily planning with 
+            Moment can help you save precious time and focus on 
+            your most critical goals.
+            
+            
+            </p>
+        </div>
+    
+    </div>
+    
+    <div id="aboutid"class="about-container">
+          <div>
+        <h4  >EveryThing you need to<br> plan your day</h4>
+         <p>
+            <span>MyPlanner</span> is all about planning your daily<br> routine.
+             With <span>MyPlanner</span>, the ultimate daily<br> planner, 
+             you can quickly run through your<br> daily to-do’s and  prioritize them so you’re<br> focused  only on the things that matter and<br> make notes.
+             
+        </p>
+          </div>
+        <div class="planner">
+            <span style="--i:1;"><img src="Pictures/img1.jpg"></span>
+            <span style="--i:2;"><img src="Pictures/img2.jpg"></span>
+            <span style="--i:3;"><img src="Pictures/img3.jpg"></span>
+            <span style="--i:4;"><img src="Pictures/img4.jpg"></span> 
+            <span style="--i:5;"><img src="Pictures/img5.jpg"></span>
+            <span style="--i:6;"><img src="Pictures/img6.jpg"></span>
+            <span style="--i:7;"><img src="Pictures/img7.jpg"></span>
+            <span style="--i:8;"><img src="Pictures/img8.jpg"></span>
+            <span style="--i:9;"><img src="Pictures/img9.jpg"></span>
+
+        </div>
+
+
+        </div>
+<div class="part1">
+        <div class="devices" >  <img  src="Pictures/Untitled design.png"></div>
+        <div class="para2">
+            
+         <h4>Organize anything with anyone, anywhere</h4>
+         <p>
+             Wherever you are, take your to do list with<br> you. Access <span>MyPlanner</span> on mobile, laptop,<br> desktop and tablet!
+              Your tasks are automatically <br>synced across all of your<br> devices, giving you ultimate control.
+             
+        </p> 
+    </div>
+</div>
+<div class="icons">
+    <div class="image"><img src="Pictures/today@2x.png"></div>
+    <div class="image"><img src="Pictures/done@2x.png"></div>
+    <div class="image"><img src="Pictures/delete@2x.png"></div>
+    <div class="image"><img src="Pictures/later@2x.png"></div>
+</div>
+
+<div class="part2">
+     <div class="para3">  
+            <h4>Daily planner is the secret weapon of successful people.</h4>
+            <p> 
+             
+             <span>MyPlanner</span> helps busy people like you focus on what’s important. It helps millions of people save time and do the things that really matter.
+            
+
+            </p>
+        </div>  
+       
+            
+        
+ </div>
+
+
+    <footer class="footer">
+        <div class="footercontainer">
+            
+            <div class="row">
+                <div class="footer-col">
+                   
+                    <ul>
+                        <li><a href="#aboutid">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">Ambassadors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    
+                    <ul>
+                        <li><a href="#">Feeback</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user)
+         {
+             if(user){
+                 window.location.href ="form.html";
+             }
+ 
+         });
+     </script>
+</body>
+</html>
